@@ -1,22 +1,18 @@
-body {
-    background-image: url('../images/wood.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+@import "style_master.css";
 
 .pages {
     display: flex;
     width: 70%;
     flex-basis : 65%;
-    margin:5em;
-    background-color: firebrick;
+    margin: 4em auto;
+    background-image: url('../images/bookcover.jpg');
     padding: 5px 15px 5px 15px;
     border-radius: 24px 40% 40% 24px/8px 8px 8px 8px;
     box-shadow: 5px 5px 5px black;
 }
 
 .page {
-    height:85vh;
+    height:75vh;
     padding: 3vw;
     width: 50%;
     background-blend-mode: multiply;
