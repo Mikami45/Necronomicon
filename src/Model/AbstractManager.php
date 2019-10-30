@@ -9,6 +9,7 @@
 namespace App\Model;
 
 use App\Model\Connection;
+use Symfony\Component\HttpClient\HttpClient;
 
 /**
  * Abstract class handling default manager.
@@ -30,15 +31,17 @@ abstract class AbstractManager
     protected $className;
 
 
+    CONST BASEURI = "https://hackathon-wild-hackoween.herokuapp.com";
+
     /**
      * Initializes Manager Abstract class.
      * @param string $table
      */
-    public function __construct(string $table)
+    public function __construct(string $table = null)
     {
         $this->table = $table;
         $this->className = __NAMESPACE__ . '\\' . ucfirst($table);
-        $this->pdo = (new Connection())->getPdoConnection();
+        if ($table) $this->pdo = (new Connection())->getPdoConnection();
     }
 
     /**
@@ -66,5 +69,13 @@ abstract class AbstractManager
         $statement->execute();
 
         return $statement->fetch();
+    }
+
+
+    protected function apiRequest(string $request, string $method = 'GET')
+    {
+        $client = HttpClient::create();
+        $response = $client->request($method, self::BASEURI . $request);
+        return $response->toArray();
     }
 }
