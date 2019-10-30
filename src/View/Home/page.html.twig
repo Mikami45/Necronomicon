@@ -1,6 +1,23 @@
+{% block content %}
 <div class="wrap">
     <div class="pages">
-        <div class="page leftpage"></div>
-        <div class="page rightpage"></div>
+        <div class="page leftpage">
+            {% for movies in content.movies %}
+            <div class="card" style="width: 18rem;">
+                <img src="{{ movies.posterUrl }}" class="card-img-top" alt="image">
+                <div class="card-body">
+                    <h5 class="card-title">{{ movies.title }}</h5>
+                    <p class="card-text">{{ movies.director }} {{ movies.year }} {{ movies.country }}</p>
+                    <a href="/moviePdo/show/2" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="page rightpage">
+            {{ films.name }}
+            {{ films.description }}
+            <img src="{{ films.image }}">
+        </div>
     </div>
 </div>
+{% endblock %}
