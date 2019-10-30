@@ -1,16 +1,38 @@
 body {
     background-image: url('../images/wood.jpg');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+}
+
+.pages {
+    display: flex;
+    width: 70%;
+    flex-basis : 65%;
+    margin:5em;
+    background-color: firebrick;
+    padding: 5px 15px 5px 15px;
+    border-radius: 24px 40% 40% 24px/8px 8px 8px 8px;
+    box-shadow: 5px 5px 5px black;
+}
+
+.page {
+    height:85vh;
+    padding: 3vw;
+    width: 50%;
+    background-blend-mode: multiply;
 }
 
 .leftpage {
-    background: url('../images/parchemin.jpg'), linear-gradient(270deg, rgba(157,158,137,1) 0%, rgba(233,226,187,1) 5%, rgba(255,251,203,1) 18%);
+    background-image: url('../images/parchemin.jpg');
+    background-size: cover;
     border-radius: 24px 40% 40% 24px/8px 8px 8px 8px;
+    box-shadow: -.4em 0 .4em black;
 }
 
 .rightpage {
-    background: url('../images/parchemin.jpg'), linear-gradient(90deg, rgba(157,158,137,1) 0%, rgba(233,226,187,1) 5%, rgba(255,251,203,1) 18%);
+    background-image: url('../images/parchemin.jpg');
+    background-size: cover;
     border-radius:  40% 24px 24px 40%/8px 8px 8px 8px;
-    overflow: auto;
+    box-shadow: -.4em 0 .4em black, .4em 0 .4em black;
 }
+
