@@ -8,7 +8,6 @@ use Symfony\Component\HttpClient\HttpClient;
 
 class MovieManager extends AbstractManager
 {
-
     public function getApiAllMovies()
     {
         $movies = $this->apiRequest('/movies');
