@@ -86,3 +86,20 @@
     display: flex;
     flex-direction: column;
 }
+
+.linkSummary{
+    margin-top:3%;
+    font-family: "Who asks Satan";
+    font-size: 3vh;
+    text-decoration: none;
+    color: black;
+    width:25%;
+}
+
+.linkSummary:hover{
+    color:red;
+}
+
+.fa-arrow-left{
+    font-size: 2vh;
+}

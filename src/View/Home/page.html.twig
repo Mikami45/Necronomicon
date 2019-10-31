@@ -13,7 +13,8 @@
                 </div>
             {% endfor %}
             <h2 class="film_name">{{ films.name }}</h2>
-        <p class="police">{{ films.description }}</p>
+            <p class="police">{{ films.description }}</p>
+            <a class="linkSummary" href="/Summary/index"><i class="fas fa-arrow-left"></i> Sommaire</a>
         </div>
         <div class="page rightpage">
             <img class ="resize_img" src="{{ films.image }}">
