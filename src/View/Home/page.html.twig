@@ -6,16 +6,15 @@
                 <div class="filmInfo">
                     <img src="{{ movies.posterUrl }}" class="imageFilm" alt="image">
                     <div class="filmDescription">
-                        <p>Réalisateur : {{ movies.director |replace({'_': ' '})}}</p>
-                        <p>Date de sortie : {{ movies.year }}</p>
-                        <p>Nationalité : {{ movies.country |replace({'_': ' '})}}</p>
+                        <p class="police">Réalisateur : {{ movies.director |replace({'_': ' '})}}</p>
+                        <p class="police">Date de sortie : {{ movies.year }}</p>
+                        <p class="police">Nationalité : {{ movies.country |replace({'_': ' '})}}</p>
                     </div>
                 </div>
             {% endfor %}
             <h2 class="film_name">{{ films.name }}</h2>
-            <div>{{ films.description }}</div>
+            <p class="police">{{ films.description }}</p>
             <a class="linkSummary" href="/Summary/index"><i class="fas fa-arrow-left"></i> Sommaire</a>
-
         </div>
         <div class="page rightpage">
             <img class ="resize_img" src="{{ films.image }}">
