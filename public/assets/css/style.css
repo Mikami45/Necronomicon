@@ -8,14 +8,14 @@
     font-style: normal;
 }
 .police {
-    font-size : 1.1em;
+    font-size : 1em;
     font-family: 'Pangolin', cursive;
     letter-spacing: 0.1em;
 }
 
 .film_name{
     font-family: "Who asks Satan";
-    font-size : 3em;
+    font-size : 2.5em;
     letter-spacing: 3px;
 
 }
@@ -64,16 +64,18 @@
 
 .film_name {
     text-align: center;
-    border: 1px solid;
+    border: 1px solid black;
     margin-bottom: 30px;
-    margin-top: 20px;
+    color: red;
+    letter-spacing: 5px;
 }
 
 .imageFilm{
-    height: 100%;
+    height: 80%;
     width: 50%;
     margin-right: 20px;
     border-radius: 25px;
+    margin-bottom: 5%;
 }
 
 .filmInfo{
@@ -88,16 +90,17 @@
 }
 
 .linkSummary{
-    margin-top:3%;
     font-family: "Who asks Satan";
     font-size: 3vh;
     text-decoration: none;
     color: black;
     width:25%;
+
 }
 
 .linkSummary:hover{
     color:red;
+    text-decoration: none;
 }
 
 .fa-arrow-left{

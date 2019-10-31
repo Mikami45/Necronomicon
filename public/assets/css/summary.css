@@ -15,6 +15,7 @@
 
 .lien:hover{
     color: red;
+    text-decoration: none;
 }
 
 .titleSummary{
