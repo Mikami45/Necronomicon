@@ -14,6 +14,11 @@ h1 {
     font-size: 15vh;
     text-align: center;
 }
+h1:hover {
+    color:red;
+    text-decoration: none;
+}
+
 .background {
     background-image: url("/assets/images/slack-imgs.com.jpeg");
     width:200vh;
@@ -23,8 +28,11 @@ h1 {
 }
 
 .enter{
-    color:red;
+    color: black;
     margin:45%;
     font-size: 3vh;
+}
+a:hover {
+    text-decoration: none;
 }
 
