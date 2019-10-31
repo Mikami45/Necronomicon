@@ -7,9 +7,17 @@
     font-weight: normal;
     font-style: normal;
 }
+.police {
+    font-size : 1.1em;
+    font-family: 'Pangolin', cursive;
+    letter-spacing: 0.1em;
+}
 
 .film_name{
     font-family: "Who asks Satan";
+    font-size : 3em;
+    letter-spacing: 3px;
+
 }
 
 .pages {
