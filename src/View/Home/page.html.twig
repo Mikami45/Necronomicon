@@ -2,17 +2,21 @@
     <div class="pages">
         <div class="page leftpage">
             {% for movies in content.movies %}
-                <img src="{{ movies.posterUrl }}" class="card-img-top" alt="image">
-                    <h5>{{ movies.title }}</h5>
-                    <p>{{ movies.director }} {{ movies.year }} {{ movies.country }}</p>
+                <h2 class="film_name">{{ movies.title |replace({'_': ' '})}}</h2>
+                <div class="filmInfo">
+                    <img src="{{ movies.posterUrl }}" class="imageFilm" alt="image">
+                    <div class="filmDescription">
+                        <p>Réalisateur : {{ movies.director |replace({'_': ' '})}}</p>
+                        <p>Date de sortie : {{ movies.year }}</p>
+                        <p>Nationalité : {{ movies.country |replace({'_': ' '})}}</p>
+                    </div>
+                </div>
             {% endfor %}
+            <h2 class="film_name">{{ films.name }}</h2>
+            <div>{{ films.description }}</div>
         </div>
         <div class="page rightpage">
-            <h1 class="film_name">{{ films.name }}</h1>
-
             <img class ="resize_img" src="{{ films.image }}">
-
-            <div>{{ films.description }}</div>
         </div>
     </div>
 </div>
