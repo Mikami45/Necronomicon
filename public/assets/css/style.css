@@ -1,22 +1,38 @@
-body {
-    background-image: url('../images/wood.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+
+@import "style_master.css";
+
+@font-face {
+    font-family: "Who asks Satan";
+    src: url("/assets/font/whoaskssatan.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+.police {
+    font-size : 1em;
+    font-family: 'Pangolin', cursive;
+    letter-spacing: 0.1em;
+}
+
+.film_name{
+    font-family: "Who asks Satan";
+    font-size : 2.5em;
+    letter-spacing: 3px;
+
 }
 
 .pages {
     display: flex;
     width: 70%;
     flex-basis : 65%;
-    margin:5em;
-    background-color: firebrick;
+    margin: 4em auto;
+    background-image: url('../images/bookcover.jpg');
     padding: 5px 15px 5px 15px;
     border-radius: 24px 40% 40% 24px/8px 8px 8px 8px;
     box-shadow: 5px 5px 5px black;
 }
 
 .page {
-    height:85vh;
+    height: 85vh;
     padding: 3vw;
     width: 50%;
     background-blend-mode: multiply;
@@ -27,6 +43,8 @@ body {
     background-size: cover;
     border-radius: 24px 40% 40% 24px/8px 8px 8px 8px;
     box-shadow: -.4em 0 .4em black;
+    display: flex;
+    flex-direction: column;
 }
 
 .rightpage {
@@ -34,5 +52,62 @@ body {
     background-size: cover;
     border-radius:  40% 24px 24px 40%/8px 8px 8px 8px;
     box-shadow: -.4em 0 .4em black, .4em 0 .4em black;
+    display: flex;
+    flex-direction: column;
 }
 
+.resize_img {
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.film_name {
+    text-align: center;
+    border: 1px solid black;
+    margin-bottom: 30px;
+    color: red;
+    letter-spacing: 5px;
+}
+
+.imageFilm{
+    height: 80%;
+    width: 50%;
+    margin-right: 20px;
+    border-radius: 25px;
+    margin-bottom: 5%;
+}
+
+.filmInfo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.filmDescription{
+    display: flex;
+    flex-direction: column;
+}
+
+.linkSummary{
+    font-family: "Who asks Satan";
+    font-size: 3vh;
+    text-decoration: none;
+    color: black;
+    width:25%;
+
+}
+
+.linkSummary:hover{
+    color:red;
+    text-decoration: none;
+}
+
+.fa-arrow-left{
+    font-size: 2vh;
+}
+.Sylvain {
+    font-size : 1.8em;
+    font-family: 'Pangolin', cursive;
+    letter-spacing: 0.1em;
+}

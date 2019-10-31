@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding:0;
+}
+@font-face {
+    font-family: "October Crow.ttf";
+    src: url("/assets/font/October Crow.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+h1 {
+    font-family: "October Crow.ttf";
+    color: black;
+    font-size: 15vh;
+    text-align: center;
+}
+h1:hover {
+    color:red;
+    text-decoration: none;
+}
+
+.background {
+    background-image: url("/assets/images/slack-imgs.com.jpeg");
+    width:200vh;
+    height:100vh;
+    background-repeat: no-repeat;
+     background-size: cover;
+}
+
+.enter{
+    color: black;
+    margin:45%;
+    font-size: 3vh;
+}
+a:hover {
+    text-decoration: none;
+}
+

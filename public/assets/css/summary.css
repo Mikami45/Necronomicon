@@ -1,0 +1,30 @@
+@import "style.css";
+
+.summaryPicture{
+    width:100%;
+    height: 100%;
+}
+
+.lien{
+    text-decoration: none;
+    font-size: 37px;
+    color: black;
+    text-align: center;
+    font-family: "Who asks Satan";
+}
+
+.lien:hover{
+    color: red;
+    text-decoration: none;
+}
+
+.titleSummary{
+    text-align: center;
+    color: red;
+    font-size: 80px;
+    margin-bottom: 3%;
+    font-family: "Who asks Satan";
+}
+.rightpage{
+    padding:1%;
+}
