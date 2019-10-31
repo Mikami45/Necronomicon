@@ -62,9 +62,10 @@
 }
 
 .imageFilm{
-    height: 90%;
+    height: 100%;
     width: 50%;
     margin-right: 20px;
+    border-radius: 25px;
 }
 
 .filmInfo{
