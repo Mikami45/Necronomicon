@@ -4,6 +4,7 @@
 namespace App\Controller;
 
 use App\Model\MovieManager;
+use App\Model\MoviePdoManager;
 use Symfony\Component\HttpClient\HttpClient;
 
 class MovieController extends AbstractController
@@ -15,13 +16,22 @@ class MovieController extends AbstractController
         return $this->twig->render('Home/index.html.twig', ['movies' => $movies]);
     }
 
-    public function search(string $title)
+    public function searchInApi(string $title)
     {
         $movieManager = new MovieManager();
         $result = $movieManager->getApiSearchMovieByTitle($title);
         return $this->twig->render('Home/index.html.twig', [
             'content'=> $result,
-            'title' => 'okokoko'
+        ]);
+    }
+    public function search(string $title, int $id)
+    {
+        $movieManager = new MovieManager('monster');
+        $films = $movieManager->selectOneById($id);
+        $result = $movieManager->getApiSearchMovieByTitle($title);
+        return $this->twig->render('Home/index.html.twig', [
+            'content'=> $result,
+            'films' => $films
         ]);
     }
 }

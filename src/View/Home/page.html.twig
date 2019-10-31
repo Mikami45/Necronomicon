@@ -1,7 +1,18 @@
 <div class="wrap">
     <div class="pages">
-        <div class="page leftpage">test</div>
+        <div class="page leftpage">
+            {% for movies in content.movies %}
+                <img src="{{ movies.posterUrl }}" class="card-img-top" alt="image">
+                    <h5>{{ movies.title }}</h5>
+                    <p>{{ movies.director }} {{ movies.year }} {{ movies.country }}</p>
+            {% endfor %}
+        </div>
         <div class="page rightpage">
+            <h1 class="film_name">{{ films.name }}</h1>
+
+            <img class ="resize_img" src="{{ films.image }}">
+
+            <div>{{ films.description }}</div>
         </div>
     </div>
 </div>
